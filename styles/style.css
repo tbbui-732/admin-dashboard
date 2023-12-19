@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     border: solid 1px;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
 }
 
 /*** MAIN CONTAINER ITEMS ***/
