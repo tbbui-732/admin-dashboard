@@ -162,6 +162,10 @@ body {
     border-radius: 12px;
 }
 
+.announcements-container > h2 {
+    font-size: 25px;
+}
+
 .announcements {
     display: grid;
     gap: 15px;
@@ -174,6 +178,10 @@ body {
     overflow: auto;
     background-color: #fff;
     border-radius: 12px;
+}
+
+.trending-container > h2 {
+    font-size: 25px;
 }
 
 .trending-container > .profiles {
