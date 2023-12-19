@@ -4,7 +4,7 @@
     border: solid 1px;
 }
 
-/*** Main container items ***/
+/*** MAIN CONTAINER ITEMS ***/
 .main-container {
     height: 100vh;
     display: grid;
@@ -23,25 +23,35 @@
     grid-area: nav;
 }
 
-/*** Sub container items ***/
+/*** *** SUB CONTAINER ITEMS *** ***/
 .sub-container {
     grid-area: sub;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-        "projects announcements"
-        "projects trending"
+        "projects-c announcements-c"
+        "projects-c trending-c"
+}
+
+/*** *** *** Projects *** *** ***/
+.projects-container {
+    grid-area: projects-c;
 }
 
 .projects {
-    grid-area: projects;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
 }
 
-.announcements {
-    grid-area: announcements;
+/*** *** *** Announcements *** *** ***/
+.announcements-container {
+    grid-area: announcements-c;
 }
 
-.trending {
-    grid-area: trending;
+/*** *** *** Trending *** *** ***/
+.trending-container {
+    grid-area: trending-c;
 }
