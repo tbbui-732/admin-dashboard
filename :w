@@ -207,12 +207,6 @@ body {
     gap: 15px;
 }
 
-.announcements > .announcement > .description {
-    color: darkgray;
-    font-size: small;
-    text-align: left;
-}
-
 
 /*** *** *** Trending *** *** ***/
 .trending-container {
