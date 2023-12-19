@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: solid 1px;
+}
+
+/*** Main container items ***/
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 
+        "sidebar nav"
+        "sidebar sub";
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+/*** Sub container items ***/
+.sub-container {
+    grid-area: sub;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending"
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
