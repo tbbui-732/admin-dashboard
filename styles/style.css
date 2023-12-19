@@ -34,7 +34,7 @@ li {
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    /* align-items: center; */
     gap: 12rem;
 }
 
@@ -74,6 +74,11 @@ li {
 /*** *** *** Announcements *** *** ***/
 .announcements-container {
     grid-area: announcements-c;
+}
+
+.announcements {
+    display: grid;
+    gap: 15px;
 }
 
 
