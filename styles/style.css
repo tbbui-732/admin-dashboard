@@ -164,6 +164,7 @@ body {
 .projects > .project > .title {
     padding-top: 20px;
     font-size: 23px;
+    text-transform: uppercase;
 }
 
 .projects > .project > .description {
@@ -195,10 +196,11 @@ body {
     grid-area: announcements-c;
     background-color: var(--anti-flash-white);
     border-radius: 12px;
+    padding-top: 12px;
 }
 
 .announcements-container > h2 {
-    font-size: 25px;
+    font-size: 27px;
     text-align: center;
 }
 
@@ -208,8 +210,8 @@ body {
 }
 
 .announcements > .announcement > .description {
-    color: darkgray;
-    font-size: small;
+    color: #525150;
+    font-size: 17px;
     text-align: left;
 }
 
@@ -220,6 +222,7 @@ body {
     overflow: auto;
     background-color: var(--anti-flash-white);
     border-radius: 12px;
+    padding-top: 12px;
 }
 
 .trending-container > h2 {
@@ -240,17 +243,21 @@ body {
     grid-template-rows: 1fr 2fr;
 }
 
-.trending-container > .profiles > .profile > .logo {
+.trending-container > .profiles > .profile > .logo { /* profile picture */
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    width: 3rem;
+    border: 2px solid var(--anti-flash-white);
+    border-radius: 100%;
 }
 
-.trending-container > .profiles > .profile > .tag {
+.trending-container > .profiles > .profile > .tag { /* username */
     font-size: small;
 }
 
 .trending-container > .profiles > .profile > .description {
-    font-size: small;
+    font-size: 14px;
+    color: #525150;
 }
 
 .trending-container > .profiles > .profile > .description > .more-btn {
