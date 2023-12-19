@@ -20,13 +20,27 @@ li {
         "sidebar sub";
 }
 
+/*** *** Sidebar *** ***/
 .sidebar {
     grid-area: sidebar;
 }
 
+/*** *** Navigation Bar *** ***/
 .nav {
     grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 12rem;
 }
+
+.nav .left-nav-items,
+.nav .right-nav-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
 
 /*** *** SUB CONTAINER ITEMS *** ***/
 .sub-container {
