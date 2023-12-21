@@ -86,6 +86,20 @@ body {
     display: grid;
     gap: 5px;
     font-size: 22px;
+
+}
+
+.sidebar > .nav-items > li,
+.sidebar > .nav-support > li {
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 200ms, text-underline-offset 300ms;
+}
+
+.sidebar > .nav-items > li:hover,
+.sidebar > .nav-support > li:hover {
+    text-decoration-color: var(--ut-orange);
+    text-underline-offset: 0.4em;
 }
 
 .sidebar > .nav-items {
@@ -165,7 +179,7 @@ body {
     align-items: center;
 
     width: 2rem;
-    transition: width 0.5s;
+    transition: width 0.8s;
 }
 
 .search-container:hover {
