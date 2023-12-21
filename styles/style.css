@@ -45,7 +45,7 @@ body {
 .main-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: clamp(1.5fr, 1.2fr, 1fr) 7fr;
     grid-template-rows: 0.7fr 7fr;
     grid-template-areas: 
         "sidebar nav"
