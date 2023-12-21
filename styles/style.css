@@ -295,6 +295,7 @@ body {
     background-color: var(--anti-flash-white);
     border-radius: 12px;
     padding-top: 12px;
+    overflow: auto;
 }
 
 .announcements-container > h2 {
