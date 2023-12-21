@@ -150,6 +150,12 @@ body {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: background-color 250ms;
+}
+
+.nav > .left-nav-items > li:hover {
+    background-color: var(--ut-orange);
+    color: var(--anti-flash-white);
 }
 
 .nav > .right-nav-items > .notification {
