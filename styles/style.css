@@ -100,6 +100,7 @@ body {
 .sidebar > .nav-support > li:hover {
     text-decoration-color: var(--ut-orange);
     text-underline-offset: 0.4em;
+    cursor: pointer;
 }
 
 .sidebar > .nav-items {
@@ -156,6 +157,7 @@ body {
 .nav > .left-nav-items > li:hover {
     background-color: var(--ut-orange);
     color: var(--anti-flash-white);
+    cursor: pointer;
 }
 
 .nav > .right-nav-items > .notification {
