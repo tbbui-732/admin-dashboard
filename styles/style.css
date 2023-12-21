@@ -142,6 +142,19 @@ body {
     width: 1.2rem; 
 }
 
+.nav > .right-nav-items > .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav > .right-nav-items > .profile > img {
+    width: 3rem;
+    border-radius: 100%;
+}
+
+
 /* Search bar animation */
 .search-container {
     background-color: var(--anti-flash-white);
