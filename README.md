@@ -4,5 +4,10 @@
 The Admin-Dashboard is a frontend project aimed at enhancing my skills in using CSS grids, exploring a little bit of color theory,
 and implementing some cool hover effects!
 
+## Preview
+[](./assets/readme-assets/admin-dashboard.png)
+[](./assets/readme-assets/recording.gif)
+
 ## Demo
 To see it live, check it [here](https://tbbui-732.github.io/admin-dashboard/)
+
