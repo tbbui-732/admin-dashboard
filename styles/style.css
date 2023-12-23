@@ -38,6 +38,7 @@ li {
 
 body {
     background-color: var(--cornflower-blue);
+    min-width: 400px;
 }
 
 
@@ -46,7 +47,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: clamp(1.5fr, 1.2fr, 1fr) 7fr;
-    grid-template-rows: 0.7fr 7fr;
+    grid-template-rows: 1fr 7fr;
     grid-template-areas: 
         "sidebar nav"
         "sidebar sub";
@@ -60,7 +61,7 @@ body {
 .sidebar {
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 0.1fr 3fr 0.1fr 3fr;
+    grid-template-rows: 1fr 0.1fr 6fr 0.1fr 3fr;
     background-color: var(--anti-flash-white);
     border-radius: 0.75rem;
     margin-bottom: 1rem;
@@ -219,7 +220,7 @@ body {
 .sub-container {
     grid-area: sub;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr min(20rem, 30%);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
         "projects-c announcements-c"
@@ -362,4 +363,37 @@ body {
 
 .trending-container > .profiles > .profile > .description > .more-btn {
     text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 7fr;
+    }
+
+    .sub-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "projects-c projects-c"
+            "announcements-c trending-c";
+    }
+
+    .projects-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects-container > h1 {
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fit, min(1fr, 25%));
+    }
+
+    .sidebar {
+        display: none;
+    }
 }
